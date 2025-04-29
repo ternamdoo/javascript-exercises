@@ -4,6 +4,8 @@ const sumAll = function(num1, num2) {
     let lastNumber;
 
     switch (true) {
+        case num1 < 0 || num2 < 0:
+            return "ERROR";
         case num1 < num2:
             firstNumber = num1;
             lastNumber = num2;
