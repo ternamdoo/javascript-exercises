@@ -5,6 +5,7 @@ const sumAll = function(num1, num2) {
 
     switch (true) {
         case num1 < 0 || num2 < 0:
+        case !Number.isInteger(num1) || !Number.isInteger(num2):
             return "ERROR";
         case num1 < num2:
             firstNumber = num1;
