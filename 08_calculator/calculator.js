@@ -1,5 +1,5 @@
-const add = function() {
-	
+const add = function(...args) {
+	return args.reduce((previousSum, currentValue) => previousSum + currentValue, 0);
 };
 
 const subtract = function() {
